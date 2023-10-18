@@ -1,18 +1,45 @@
 header, nav, main, footer{
     background-color:slategray;
+    border:solid
 }
-nav{
-    grid-template-columns: 1fr 1fr 1fr;
-}
-body{
-
+header{
+    grid-area:header;
+    display: grid;
+    grid-template-rows:auto auto;
 }
 main{
+    grid-area: main;
     text-align: center;
+}
+nav > ul{
+    display: grid;
+    height:100%;
+    gap:5px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:0;
+    padding:0;
+}
+footer{
+    grid-area: footer;
 }
 a{
     text-decoration: none;
 }
 li{
+    text-align: center;
     list-style: none;
+    display: grid;
+    justify-content: stretch;
+    border: 1px solid black;
+    
 }
+.wrapper{
+    display: grid;
+  
+    grid-template-rows:200px auto 50px ;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+}
+
