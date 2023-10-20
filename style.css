@@ -1,6 +1,7 @@
 header, nav, main, footer{
-    background-color:slategray;
-    border:solid
+    background-color:rgb(106, 169, 233);
+
+    border-collapse: collapse;
 }
 header{
     grid-area:header;
@@ -10,11 +11,12 @@ header{
 main{
     grid-area: main;
     text-align: center;
+    border: 1px solid;
 }
 nav > ul{
     display: grid;
     height:100%;
-    gap:5px;
+    gap:25px;
     grid-template-columns: 1fr 1fr 1fr;
     margin:0;
     padding:0;
@@ -31,15 +33,37 @@ li{
     display: grid;
     justify-content: stretch;
     border: 1px solid black;
-    
+    padding: 10px;
+    margin-bottom: 15px;
 }
 .wrapper{
     display: grid;
   
-    grid-template-rows:200px auto 50px ;
+    grid-template-rows:150px auto 55px ;
     grid-template-areas: 
         "header"
         "main"
         "footer";
 }
+.Intressen{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.Volleyboll{
+    border: 1px solid;
+    padding: 10px;
+}
+.Bilar{
+    border: 1px solid;
+    padding: 10px;
+}
+.Anime{
+    border: 1px solid;
+    padding: 10px;
+}
+#RödShelby{
+    
+}
 
+     
