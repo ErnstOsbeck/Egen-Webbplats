@@ -1,7 +1,8 @@
 header, nav, main, footer{
     background-color:rgb(106, 169, 233);
-
-    border-collapse: collapse;
+}
+body{
+    
 }
 header{
     grid-area:header;
@@ -38,7 +39,6 @@ li{
 }
 .wrapper{
     display: grid;
-  
     grid-template-rows:150px auto 55px ;
     grid-template-areas: 
         "header"
@@ -53,17 +53,30 @@ li{
 .Volleyboll{
     border: 1px solid;
     padding: 10px;
+    border-radius: 10px;
 }
 .Bilar{
     border: 1px solid;
     padding: 10px;
+    border-radius: 10px;
 }
 .Anime{
     border: 1px solid;
     padding: 10px;
+    border-radius: 10px;
 }
 #RödShelby{
-    
+    max-width: 590px;
+    height: auto;
+    border-radius: 10px;
 }
-
-     
+#Beach{
+    max-width: 590px;
+    height: auto;
+    border-radius: 10px;
+}
+#YourName{
+    max-width: 590px;
+    height: auto;
+    border-radius: 10px;
+}
