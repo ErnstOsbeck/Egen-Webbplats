@@ -1,5 +1,5 @@
-header, nav, main, footer{
-    background-color:rgb(106, 169, 233);
+header, nav{
+    background-color:rgb(238, 43, 8);
 }
 body{
     
@@ -28,14 +28,18 @@ footer{
 a{
     text-decoration: none;
 }
+p, td, th, li, h2,caption{
+    color: white;
+}
 li{
     text-align: center;
     list-style: none;
     display: grid;
     justify-content: stretch;
-    border: 1px solid black;
+    border: 1px solid white;
     padding: 10px;
     margin-bottom: 15px;
+    border-radius: 10px;
 }
 .wrapper{
     display: grid;
@@ -44,6 +48,7 @@ li{
         "header"
         "main"
         "footer";
+        background-color:rgb(4, 35, 66);
 }
 .Intressen{
     display: grid;
@@ -79,4 +84,17 @@ li{
     max-width: 590px;
     height: auto;
     border-radius: 10px;
+}
+.text{
+    font-size: 16px;
+    font-weight: 100;
+}
+table{
+    
+}
+table, th, tr, td{
+    border: solid;
+    border-collapse: collapse;
+    border-width: 1px;
+    border-color: white;
 }
