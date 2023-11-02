@@ -41,8 +41,27 @@ li{
     margin-bottom: 15px;
     border-radius: 10px;
 }
-.wrapper{
-    width: 100%;
+.wrapper1{
+    height: 100vh;
+    display: grid;
+    grid-template-rows:150px auto 55px ;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        background-color:rgb(4, 35, 66);
+}
+.wrapper2{
+    height: 100%;
+    display: grid;
+    grid-template-rows:150px auto 55px ;
+    grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        background-color:rgb(4, 35, 66);
+}
+.wrapper3{
     height: 100%;
     display: grid;
     grid-template-rows:150px auto 55px ;
