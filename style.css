@@ -2,7 +2,7 @@ header, nav{
     background-color:rgb(238, 43, 8);
 }
 body{
-    
+    background-color:rgb(4, 35, 66);
 }
 header{
     grid-area:header;
@@ -42,7 +42,7 @@ li{
     border-radius: 10px;
 }
 .wrapper1{
-    height: 100vh;
+    height: 97vh;
     display: grid;
     grid-template-rows:150px auto 55px ;
     grid-template-areas: 
@@ -93,20 +93,24 @@ li{
 }
 img{
     max-width: 100%;
-    max-height: auto;
+    height: auto;
     border-radius: 10px;
 }
-
+#Teknikum{
+    border-radius: 0px;
+}
 .text{
     font-size: 16px;
     font-weight: 100;
 }
-table{
-    
+tr:nth-child(even) { 
+    background-color: rgb(59, 59, 190); 
 }
 table, th, tr, td{
     border: solid;
     border-collapse: collapse;
     border-width: 1px;
     border-color: white;
+    padding: 5px;
+    align-content: center;
 }
