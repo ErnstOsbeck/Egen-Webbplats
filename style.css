@@ -1,83 +1,63 @@
 header, nav{
-    background-color:rgb(238, 43, 8);
+    background-color:rgb(238, 43, 8); /*ändrar bakgrundsfärg i header och nav*/
 }
 body{
-    background-color:rgb(4, 35, 66);
+    background-color:rgb(4, 35, 66); /*ändrar bakgrundsfärg i body*/
 }
 header{
-    grid-area:header;
-    display: grid;
-    grid-template-rows:auto auto;
+    grid-area:header; /*bestämmer var i griden headern är*/
+    display: grid; /*skapar ett grid i headern*/
+    grid-template-rows:auto auto; /*sätter ut två lika stora rader i header-griden*/
 }
 main{
-    grid-area: main;
-    text-align: center;
-    border: 1px solid;
+    grid-area: main; /*bestämmer var i griden main är*/
+    text-align: center; /*centrerar all text som är i main*/
+    border: 1px solid; /*skapar en border som är en pixel tjock och som har stilen solid runt hela main*/
 }
 nav > ul{
-    display: grid;
-    height:100%;
-    gap:25px;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin:0;
-    padding:0;
+    display: grid; /*skapar ett grid i nav*/
+    height:100%; /*gör så att griden fyller upp hela nav */
+    gap:25px; /*skapar ett 25 pixel brett mellanrum mellan kolumnerna*/
+    grid-template-columns: 1fr 1fr 1fr; /*skapar tre lika breda kolumner i nav-griden*/
+    margin:0; /*sätter margin till 0*/
+    padding:0; /*sätter padding till 0*/
 }
 footer{
-    grid-area: footer;
+    grid-area: footer; /*bestämmer var i griden footern är*/
 }
 a{
-    text-decoration: none;
+    text-decoration: none; /*gör så att länkarna i naven inte har någon understrykning*/
 }
 p, td, th, li, h2,caption{
-    color: white;
+    color: white; /*sätter all textfärg till vit*/
 }
 li{
-    text-align: center;
-    list-style: none;
-    display: grid;
-    justify-content: stretch;
-    border: 1px solid white;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    text-align: center; /*centrerar alla list-element*/
+    list-style: none; /*gör så att list-elementen inte har något framför sig*/
+    display: grid; /*skapar ett grid i listan*/
+    justify-content: stretch; /*gör så att man kan klicka var som helst i listans grid för att följa länkar dvs. skapar en knapp*/
+    border: 1px solid white; /*ändrar färg på listans border*/
+    padding: 10px; /*sätter padding till 10px*/
+    margin-bottom: 15px; /*sätter botten-margin till 15px*/
+    border-radius: 10px; /*sätter top-margin till 10px*/
 }
-.wrapper1{
-    height: 97vh;
-    display: grid;
-    grid-template-rows:150px auto 55px ;
-    grid-template-areas: 
+.wrapper{
+    height: 100%; /*sätter höjden på wrapper till 100%*/
+    display: grid; /*skapar ett grid i wrapper*/
+    grid-template-rows:150px auto 55px ; /*besätmmer höjderna på dem tre grid-raderna*/
+    grid-template-areas: /*bestämmer namnen på grid-raderna*/
         "header"
         "main"
         "footer";
-        background-color:rgb(4, 35, 66);
-}
-.wrapper2{
-    height: 100%;
-    display: grid;
-    grid-template-rows:150px auto 55px ;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-        background-color:rgb(4, 35, 66);
-}
-.wrapper3{
-    height: 100%;
-    display: grid;
-    grid-template-rows:150px auto 55px ;
-    grid-template-areas: 
-        "header"
-        "main"
-        "footer";
-        background-color:rgb(4, 35, 66);
+        background-color:rgb(4, 35, 66); /*ändrar bakgrundsfärgen på wrapper*/
 }
 .Intressen{
-    display: grid;
+    display: grid; /*skapar ett grid i main på sidan Intressen*/
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 }
 .Volleyboll{
-    border: 1px solid;
+    border: 1px solid; /*skapar en border*/
     padding: 10px;
     border-radius: 10px;
 }
@@ -92,25 +72,25 @@ li{
     border-radius: 10px;
 }
 img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    max-width: 100%; /*bestämmer max-bredden på bilden*/
+    height: auto; /*bestämmer höjden på bilden*/
+    border-radius: 10px; /*rundar hörnen på bilderna*/
 }
 #Teknikum{
-    border-radius: 0px;
+    border-radius: 0px; /*gör så att bilden "Teknikum" inte har rundade hörn*/
 }
 .text{
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 16px; /*bestämmer text-storleken*/
+    font-weight: 100; /*bestömmer text-tjockleken*/
 }
 tr:nth-child(even) { 
-    background-color: rgb(59, 59, 190); 
+    background-color: rgb(59, 59, 190); /*gör så att alla jämna rader i tabellen har en annan färg*/
 }
 table, th, tr, td{
-    border: solid;
-    border-collapse: collapse;
-    border-width: 1px;
-    border-color: white;
+    border: solid; /*skapar en border runt alla tabell-element*/
+    border-collapse: collapse; /*gör så att det inte finns dubbla borders mellan tabell-elementen*/
+    border-width: 1px; /*bestämmer tjockleken på bordern*/
+    border-color: white; /*bestämmer färgen på bordern*/
     padding: 5px;
-    align-content: center;
+    align-content: center; /*gör ingenting*/
 }
