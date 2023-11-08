@@ -79,6 +79,9 @@ img{
 #Teknikum{
     border-radius: 0px; /*gör så att bilden "Teknikum" inte har rundade hörn*/
 }
+#wishlist{
+    list-style: circle; /*gör så att wishlist har cirklar*/
+}
 .text{
     font-size: 16px; /*bestämmer text-storleken*/
     font-weight: 100; /*bestömmer text-tjockleken*/
